@@ -13,10 +13,5 @@ function validateForm() {
 
 
 function toggle(toggleID){
-	var togglePara = document.getElementById(toggleID);
-	if(togglePara.style.display == "none"){
-		togglePara.style.display = 'block'
-	}else{
-		togglePara.style.display = 'none';
-	}
+	document.getElementById(toggleID).classList.toggle('hidden');
 }
