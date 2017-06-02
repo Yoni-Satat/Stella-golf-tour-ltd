@@ -191,15 +191,21 @@ ul#services li{
 }
 
 /* BLOG PAGE*/
-.blog-section{
-	padding: 20px;
-    border-bottom: #cccccc solid 3px;
-    margin-bottom: 10px;
-    background: #e6e6e6;
+
+
+/*#golfTour, #hotels, #pt, #restaurants{
+	display: none;
+}*/
+ 
+.hidden{
+	display: none;
 }
 
-#golfTour, #hotels, #pt, #restaurants{
-	display: none;
+ul#services p{
+	background-color: #fff;
+    padding: 12px;
+    border: 1px solid #000;
+    opacity: .8;
 }
 
 .button-blog{
@@ -251,6 +257,8 @@ main{
 
 	header li{
 		padding: 0 5px 0 5px;
+		display: block;
+    	margin-bottom: 20px;
 	}
 
 }
