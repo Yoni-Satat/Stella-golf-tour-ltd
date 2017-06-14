@@ -7,7 +7,7 @@ function validateForm() {
 	if(fname == "" || lname == "" || email == "" || message == "") {
 		alert('Please fill in all fields');
 	}else{
-		alert('Thank you, your detalis have been succesfully submitted');
+		alert('Thanks ' + fname + ' ' + lname +' your detalis have been succesfully submitted');
 	}
 }
 
