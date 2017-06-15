@@ -12,6 +12,10 @@ function validateForm() {
 }
 
 
-function toggle(toggleID){
-	document.getElementById(toggleID).classList.toggle('hidden');
+function expand(paraID){
+	var allPara = document.querySelectorAll('#services p');
+	for(var i = 0; i < allPara.length; i++){
+		allPara[i].classList.add('hidden');
+	}
+	document.getElementById(paraID).classList.remove('hidden');
 }
