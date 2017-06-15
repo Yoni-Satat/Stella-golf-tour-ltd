@@ -65,31 +65,31 @@
 			<aside id="sidebar">
 				<div class="dark"> <!-- for dark background, find class in css.style under global -->
 					<h3>Get A Quote</h3>
-					<form name="getAQuote" action="services.html" method="post" class="quote" onsubmit="return validateForm()">
+					<form name="getAQuote" class="quote" novalidate="">
 						<div>
 							<label for="fname">First Name</label><br>
-							<input type="text" id="fname" name="fname" placeholder="First Name" required="">
+							<input type="text" id="fname" name="fname" placeholder="First Name">
 						</div>
 						<div>
 							<label for="lname">Last Name</label><br>
-							<input type="text" id="lname" name="lname" placeholder="Last Name" required="">
+							<input type="text" id="lname" name="lname" placeholder="Last Name">
 						</div>
 						<div>
 							<label>Email</label><br>
-							<input id="email" type="email" name="email" placeholder="Email Address" required="">
+							<input id="email" type="email" name="email" placeholder="Email Address">
 						</div>
 						<div>
 							<label>Message</label><br>
-							<textarea placeholder="Message" id="message" name="message" required=""></textarea>
+							<textarea placeholder="Message" id="message" name="message"></textarea>
 						</div>
-						<button class="button_1" type="submit" onsubmit="return(validateForm)">Send</button>
+						<button class="button_1" onclick="validateForm()">Send</button>
 						<hr>
-						<h3>Our Newsletter</h3>
-						<form class="quote">
-							<label>Subscribe</label>
-							<input type="email" placeholder="Enter Email...">
-							<button type="submit" class="button_1 btn-score">Subscribe</button>	
-						</form>
+					</form>
+					<h3>Our Newsletter</h3>
+					<form class="quote">
+						<label>Subscribe</label>
+						<input type="email" placeholder="Enter Email...">
+						<button type="submit" class="button_1 btn-score">Subscribe</button>	
 					</form>
 				</div>
 			</aside>
